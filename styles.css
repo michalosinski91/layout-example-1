@@ -89,6 +89,8 @@ nav {
 
 header {
     background-image: url(./assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 12em 0;
     position: relative;
     background-size: cover;
