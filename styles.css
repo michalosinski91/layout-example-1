@@ -26,15 +26,6 @@ h1, h2, h3, h4, h5 {
 
 ************************************/
 
-
-/* Navigation */
-
-nav {
-    background-color: #f8f8f8;
-    padding: 1em 0;
-
-}
-
 .container-flex {
     display: flex;
     flex-direction: column;
@@ -44,6 +35,15 @@ nav {
     text-align: center;
     align-items: center;
 }
+
+/* Navigation */
+
+nav {
+
+    padding: 1em 0;
+
+}
+
 
 .navbar-brand {
     color: black;
@@ -75,7 +75,7 @@ nav {
 
 .navbar-nav a:hover,
 .navbar-nav a:focus {
-    color: #1792d2;
+    color: #005dc0;
 }
 
 @media (min-width: 768px) {
@@ -107,7 +107,7 @@ header {
 }
 
 .banner-container {
-    max-width: 900px;
+    max-width: 1100px;
     text-align: center;
     position: relative;
     margin: 0 auto;
@@ -137,7 +137,7 @@ header {
     width: 100%;
     padding: 0.5em 1em;
     margin: 0 5px;
-    font-size: 1.25em;
+    font-size: 1.5em;
     border-radius: 0.3em;
     border: 1px #f8f8f8;
     margin-bottom: 10px;
@@ -150,7 +150,7 @@ header {
     width: 100%;
     padding: 0.5em 1em;
     margin: 0 5px;
-    font-size: 1.25em;
+    font-size: 1.5em;
     border-radius: 0.3em;
     background-color: #007bff;
     border: 1px #007bff;
@@ -167,9 +167,77 @@ header {
 
 @media (min-width: 768px) {
     .banner-text h1 {
-        font-size: 3em;
+        font-size: 3.5em;
     }
     .banner-signup-form {
+        flex-direction: row;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    padding: 2em 0
+}
+
+.footer-main-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-main-links li  {
+    margin-right: 1em;
+}
+
+.footer-main-links li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.25em;
+}
+
+.footer-main-links li a:hover,
+.footer-main-links li a:focus {
+    color: #005dc0;
+}
+
+.footer-main-copyright {
+    margin-bottom: 1.5em;
+}
+.footer-main-copyright a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.footer-main-copyright a:hover,
+.footer-main-copyright a:focus {
+    color: #222222;
+    text-decoration: underline;
+}
+
+.footer-social ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-social li {
+    margin-right: 1.5em;
+}
+
+.footer-social li a {
+    color: #007bff;
+}
+
+.footer-social li a:hover,
+.footer-social li a:focus {
+    color: #005dc0
+}
+
+
+@media (min-width: 768px) {
+    .footer-container {
         flex-direction: row;
     }
 }
