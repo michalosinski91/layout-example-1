@@ -14,7 +14,9 @@ body {
 
 ************************************/
 
-
+h1, h2, h3, h4, h5 {
+    margin: 0
+}
 
 
 
@@ -76,8 +78,96 @@ nav {
     color: #1792d2;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 768px) {
     .container-flex {
+        flex-direction: row;
+    }
+}
+
+
+/* Header */
+
+header {
+    background-image: url(./assets/banner.jpg);
+    padding: 12em 0;
+    position: relative;
+    background-size: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    opacity: .3;
+    top: 0;
+    left: 0;
+}
+
+.banner-container {
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 5%;
+    color: white;
+}
+
+.banner-text {
+    margin-bottom: 3em;
+}
+
+.banner-text h1 {
+    font-size: 2em;
+}
+
+.banner-signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5%;
+    line-height: 1.5;
+}
+
+.banner-signup-form input {
+    display: block;
+    flex-basis: 100%;
+    width: 100%;
+    padding: 0.5em 1em;
+    margin: 0 5px;
+    font-size: 1.25em;
+    border-radius: 0.3em;
+    border: 1px #f8f8f8;
+    margin-bottom: 10px;
+}
+
+.banner-signup-form button {
+    cursor: pointer;
+    display: block;
+    flex-basis: 60%;
+    width: 100%;
+    padding: 0.5em 1em;
+    margin: 0 5px;
+    font-size: 1.25em;
+    border-radius: 0.3em;
+    background-color: #007bff;
+    border: 1px #007bff;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.banner-signup-form button:hover,
+.banner-signup-form button:focus {
+    background-color: #005dc0;
+    border: 1px #005dc0;
+}
+
+@media (min-width: 768px) {
+    .banner-text h1 {
+        font-size: 3em;
+    }
+    .banner-signup-form {
         flex-direction: row;
     }
 }
