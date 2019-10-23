@@ -78,7 +78,7 @@ nav {
     color: #005dc0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .container-flex {
         flex-direction: row;
     }
@@ -165,7 +165,7 @@ header {
     border: 1px #005dc0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .banner-text h1 {
         font-size: 3.5em;
     }
@@ -173,6 +173,76 @@ header {
         flex-direction: row;
     }
 }
+
+
+/* Features */
+
+.features {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tech, .travel, .food {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.features-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 30em;
+    width: 100%;
+}
+
+.tech .features-image {
+    background-image: url('./assets/laptop.jpg');
+}
+
+.travel .features-image {
+    background-image: url('./assets/travel.jpg');
+}
+
+.food .features-image {
+    background-image: url('./assets/food.jpg');
+}
+
+.features-text {
+    padding: 7em;
+    margin: 0 auto;
+}
+
+.features-text h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.features-text p {
+    font-size: 1.25em;
+}
+
+
+@media (min-width: 900px) {
+    .tech, .travel, .food {
+        flex-direction: row;
+    }
+    .features-image {
+        flex-basis: 50%;
+        max-width: 50%;
+
+    }
+    .features-text {
+        max-width: 50%;
+    }
+    .travel .features-image {
+        order: -1;
+    }
+}
+
+/* Testimonials */
+
+
 
 
 /* Footer */
@@ -236,7 +306,7 @@ footer {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .footer-container {
         flex-direction: row;
     }
